@@ -1,0 +1,19 @@
+<html>
+<head>
+
+</head>
+<body>
+  <script>
+const Http = new XMLHttpRequest();
+const url='https://jsonplaceholder.typicode.com/photos';
+Http.open("GET", url);
+Http.send();
+Http.onreadystatechange=(e)=>{
+console.log(Http.responseText)
+}
+
+
+</script>
+</body>
+
+</html>
